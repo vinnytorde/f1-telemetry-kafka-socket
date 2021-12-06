@@ -6,23 +6,24 @@ import lombok.Data;
 @Data
 public class Headers {
     @JsonAlias("m_packetFormat")
-    private Float packetFormat;
+    private Integer packetFormat; // 2020
     @JsonAlias("m_gameMajorVersion")
-    private Float gameMajorVersion;
+    private Integer gameMajorVersion; // Game major version - "X.00"
     @JsonAlias("m_gameMinorVersion")
-    private Float gameMinorVersion;
+    private Integer gameMinorVersion; // Game minor version - "1.XX"
     @JsonAlias("m_packetVersion")
-    private Float packetVersion;
+    private Integer packetVersion; // Version of this packet type, all start from 1
     @JsonAlias("m_packetId")
-    private Float packetId;
+    private Integer packetId; // Identifier for the packet type, see below
     @JsonAlias("m_sessionUID")
-    private String sessionUID;
+    private String sessionUID; // Unique identifier for the session
     @JsonAlias("m_sessionTime")
-    float sessionTime;
+    private Float sessionTime; // Session timestamp
     @JsonAlias("m_frameIdentifier")
-    private Float frameIdentifier;
+    private Integer frameIdentifier; // Identifier for the frame the data was retrieved on
     @JsonAlias("m_playerCarIndex")
-    private Float playerCarIndex;
+    private Integer playerCarIndex; // Index of player's car in the array
     @JsonAlias("m_secondaryPlayerCarIndex")
-    private Float secondaryPlayerCarIndex;
+    private Integer secondaryPlayerCarIndex; // Index of secondary player's car in the array (splitscreen). 255 if no second player
 }
+
