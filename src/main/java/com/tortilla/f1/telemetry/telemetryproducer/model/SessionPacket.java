@@ -6,47 +6,47 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class Session {
+public class SessionPacket {
     @JsonAlias("m_weather")
-    private int weather;
+    private Float weather;
     @JsonAlias("m_trackTemperature")
-    private int trackTemperature;
+    private Float trackTemperature;
     @JsonAlias("m_airTemperature")
-    private int airTemperature;
+    private Float airTemperature;
     @JsonAlias("m_totalLaps")
-    private int totalLaps;
+    private Float totalLaps;
     @JsonAlias("m_trackLength")
-    private int trackLength;
+    private Float trackLength;
     @JsonAlias("m_sessionType")
-    private int sessionType;
+    private Float sessionType;
     @JsonAlias("m_trackId")
-    private int trackId;
+    private Float trackId;
     @JsonAlias("m_formula")
-    private int formula;
+    private Float formula;
     @JsonAlias("m_sessionTimeLeft")
-    private int sessionTimeLeft;
+    private Float sessionTimeLeft;
     @JsonAlias("m_sessionDuration")
-    private int sessionDuration;
+    private Float sessionDuration;
     @JsonAlias("m_pitSpeedLimit")
-    private int pitSpeedLimit;
+    private Float pitSpeedLimit;
     @JsonAlias("m_gamePaused")
-    private int gamePaused;
+    private Float gamePaused;
     @JsonAlias("m_isSpectating")
-    private int isSpectating;
+    private Float isSpectating;
     @JsonAlias("m_spectatorCarIndex")
-    private int spectatorCarIndex;
+    private Float spectatorCarIndex;
     @JsonAlias("m_sliProNativeSupport")
-    private int sliProNativeSupport;
+    private Float sliProNativeSupport;
     @JsonAlias("m_numMarshalZones")
-    private int numMarshalZones;
+    private Float numMarshalZones;
     @JsonAlias("m_marshalZones")
     private List<MarshalZones> marshalZones;
     @JsonAlias("m_safetyCarStatus")
-    private int safetyCarStatus;
+    private Float safetyCarStatus;
     @JsonAlias("m_networkGame")
-    private int networkGame;
+    private Float networkGame;
     @JsonAlias("m_numWeatherForecastSamples")
-    private int numWeatherForecastSamples;
+    private Float numWeatherForecastSamples;
     @JsonAlias("m_weatherForecastSamples")
     private List<ForecastSample> forecastSamples;
 }

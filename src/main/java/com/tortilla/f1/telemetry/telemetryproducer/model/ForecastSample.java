@@ -4,13 +4,13 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 
 public class ForecastSample {
     @JsonAlias("m_sessionType")
-    private int sessionType;
+    private Float sessionType;
     @JsonAlias("m_timeOffset")
-    private int timeOffset;
+    private Float timeOffset;
     @JsonAlias("m_weather")
-    private int weather;
+    private Float weather;
     @JsonAlias("m_trackTemperature")
-    private int trackTemperature;
+    private Float trackTemperature;
     @JsonAlias("m_airTemperature")
-    private int airTemperature;
+    private Float airTemperature;
 }
