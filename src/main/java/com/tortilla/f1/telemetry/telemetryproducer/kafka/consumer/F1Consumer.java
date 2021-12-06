@@ -34,7 +34,7 @@ public class F1Consumer implements TopicsConstants {
     }
 
     @KafkaListener(topics = carSetups, groupId = "telemetry-producer", containerFactory = "carSetupsContainerFactory")
-    public void listenCarSetups(CarSetupsPacket message) {
+    public void listenCarSetups(CarSetupPacket message) {
         System.out.println("message from carSetups listener");
     }
 

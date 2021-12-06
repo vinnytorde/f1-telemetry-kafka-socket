@@ -102,12 +102,12 @@ public class Consumer {
     }
 
     @Bean
-    public ConsumerFactory<String, CarSetupsPacket> carSetupsConsumerFactory() {
-        return getConsumerFactory(CarSetupsPacket.class);
+    public ConsumerFactory<String, CarSetupPacket> carSetupsConsumerFactory() {
+        return getConsumerFactory(CarSetupPacket.class);
     }
 
     @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, CarSetupsPacket> carSetupsContainerFactory() {
+    public ConcurrentKafkaListenerContainerFactory<String, CarSetupPacket> carSetupsContainerFactory() {
         return getKafkaListenerContainerFactory(carSetupsConsumerFactory());
     }
 
