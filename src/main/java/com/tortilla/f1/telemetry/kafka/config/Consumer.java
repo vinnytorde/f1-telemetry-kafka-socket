@@ -1,7 +1,6 @@
 package com.tortilla.f1.telemetry.kafka.config;
 
 import com.tortilla.f1.telemetry.model.*;
-import com.tortilla.f1.telemetry.telemetryproducer.model.*;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;

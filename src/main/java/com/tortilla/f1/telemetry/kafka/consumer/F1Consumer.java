@@ -1,17 +1,17 @@
 package com.tortilla.f1.telemetry.kafka.consumer;
 
 import com.tortilla.f1.telemetry.model.*;
-import com.tortilla.f1.telemetry.telemetryproducer.model.*;
-import com.tortilla.f1.telemetry.util.TopicsConstants;
+import com.tortilla.f1.telemetry.util.TopicConstants;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
-@Component
-public class F1Consumer implements TopicsConstants {
+@Controller
+public class F1Consumer implements TopicConstants {
 
     @KafkaListener(topics = session, groupId = "telemetry-producer-session")
-    public void listenSessionTelemetry(SessionPacket message) {
+    public SessionPacket listenSessionTelemetry(SessionPacket message) {
         System.out.println("message from session listener");
+        return message;
     }
 
     @KafkaListener(topics = motion, groupId = "telemetry-producer-motion", containerFactory = "motionContainerFactory")

@@ -1,6 +1,6 @@
 package com.tortilla.f1.telemetry.kafka.topic;
 
-import com.tortilla.f1.telemetry.util.TopicsConstants;
+import com.tortilla.f1.telemetry.util.TopicConstants;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-public class KafkaTopicConfig implements TopicsConstants {
+public class KafkaTopicConfig implements TopicConstants {
 
     @Value(value = "${kafka.bootstrapAddress}")
     private String bootstrapAddress;

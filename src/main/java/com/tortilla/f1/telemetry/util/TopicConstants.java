@@ -1,6 +1,6 @@
 package com.tortilla.f1.telemetry.util;
 
-public interface TopicsConstants {
+public interface TopicConstants {
     String session = "session";
     String motion = "motion";
     String lapData = "lapData";
