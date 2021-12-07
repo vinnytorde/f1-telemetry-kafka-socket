@@ -43,16 +43,6 @@ public class Consumer {
     }
 
     @Bean
-    public ConsumerFactory<String, SessionPacket> consumerFactory() {
-        return getConsumerFactory(SessionPacket.class);
-    }
-
-    @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, SessionPacket> kafkaListenerContainerFactory() {
-        return getKafkaListenerContainerFactory(consumerFactory());
-    }
-
-    @Bean
     public ConsumerFactory<String, SessionPacket> sessionConsumerFactory() {
         return getConsumerFactory(SessionPacket.class);
     }

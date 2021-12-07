@@ -1,7 +1,9 @@
 package com.tortilla.f1.telemetry.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import lombok.Data;
 
+@Data
 public class ForecastSample {
     @JsonAlias("m_sessionType")
     private Float sessionType;
