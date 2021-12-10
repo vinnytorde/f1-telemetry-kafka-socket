@@ -1,4 +1,4 @@
-package com.tortilla.f1.telemetry.kafka.topic;
+package com.tortilla.f1.telemetry.config;
 
 import com.tortilla.f1.telemetry.util.TopicConstants;
 import org.apache.kafka.clients.admin.AdminClientConfig;

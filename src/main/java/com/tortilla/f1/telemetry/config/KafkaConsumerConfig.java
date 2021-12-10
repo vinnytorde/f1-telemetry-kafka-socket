@@ -1,4 +1,4 @@
-package com.tortilla.f1.telemetry.kafka.config;
+package com.tortilla.f1.telemetry.config;
 
 import com.tortilla.f1.telemetry.model.*;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -17,7 +17,7 @@ import java.util.Map;
 
 @EnableKafka
 @Configuration
-public class Consumer {
+public class KafkaConsumerConfig {
     @Value(value = "${kafka.bootstrapAddress}")
     private String bootstrapAddress;
 
