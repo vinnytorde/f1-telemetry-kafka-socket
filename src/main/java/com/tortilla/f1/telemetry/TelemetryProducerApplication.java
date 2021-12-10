@@ -25,7 +25,7 @@ public class TelemetryProducerApplication {
 			while(true){
 				String message = "message number " + i++;
 				System.out.println(message);
-				template.convertAndSend("/topic/greetings", new Greeting(message));
+				template.convertAndSend("/telemetry/liveness", new Greeting(message));
 				Thread.sleep(2000);
 			}
 		};

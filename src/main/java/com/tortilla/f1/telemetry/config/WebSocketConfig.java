@@ -12,12 +12,12 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
-        config.enableSimpleBroker("/");
+        config.enableSimpleBroker("/telemetry");
     }
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/telemetry").setAllowedOriginPatterns("*").withSockJS();
+        registry.addEndpoint("/f1").setAllowedOriginPatterns("*").withSockJS();
     }
 
 }
